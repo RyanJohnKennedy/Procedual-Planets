@@ -82,13 +82,13 @@ MonoBehaviour:
     noise:
       filterType: 0
       simpleNoiseSettings:
-        strength: 1
-        numLayers: 1
-        baseRoughness: 1
-        roughness: 2
-        persistence: 0.5
+        strength: 0
+        numLayers: 4
+        baseRoughness: 10.25
+        roughness: 2.85
+        persistence: 2.71
         centre: {x: 0, y: 0, z: 0}
-        minValue: 0
+        minValue: 9.36
       ridgedNoiseSettings:
         strength: 1
         numLayers: 1
@@ -98,7 +98,7 @@ MonoBehaviour:
         centre: {x: 0, y: 0, z: 0}
         minValue: 0
         weightMultiplier: 0.8
-    noiseOffset: 2.22
+    noiseOffset: 1.81
     noiseStrength: 4.13
     blendAmount: 1
   oceanColour:

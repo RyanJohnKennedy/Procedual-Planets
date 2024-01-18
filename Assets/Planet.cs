@@ -21,6 +21,8 @@ public class Planet : MonoBehaviour
     ShapeGenerator shapeGenerator = new ShapeGenerator();
     ColourGenerator colourGenerator = new ColourGenerator();
 
+    public ShapeGenerator Shape { get { return shapeGenerator; } }
+
     [SerializeField, HideInInspector]
     MeshFilter[] meshFilters;
     TerrainFace[] terrainFaces;
