@@ -6,6 +6,8 @@ public class SunController : MonoBehaviour
 {
     public Planet sun;
 
+    public float counter = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,12 @@ public class SunController : MonoBehaviour
         sun.Shape.Settings.noiseLayers[0].noiseSettings.simpleNoiseSettings.centre.y += 0.05f * Time.deltaTime;
         sun.Shape.Settings.noiseLayers[0].noiseSettings.simpleNoiseSettings.centre.z += 0.05f * Time.deltaTime;
 
-        sun.GeneratePlanet();
+        counter += Time.deltaTime;
+
+        if (counter > .1f)
+        {
+            sun.GeneratePlanet();
+            counter = 0;
+        }
     }
 }
